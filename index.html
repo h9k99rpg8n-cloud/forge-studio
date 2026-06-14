@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Forge Studio es un editor 3D web para crear modelos por bloques desde movil y navegador.">
+  <title>Forge Studio Alfa 0.1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>Forge Studio</h1>
+        <p>Alfa 0.1 - Modelado 3D movil</p>
+      </div>
+      <button id="deleteBtn" class="danger-btn">Borrar</button>
+    </header>
+
+    <section class="viewport-card">
+      <canvas id="viewport"></canvas>
+      <div class="hint">Arrastra para rotar • Pellizca para zoom • Toca un cubo para seleccionar</div>
+    </section>
+
+    <section class="panel">
+      <button id="addCubeBtn" class="tool-btn">Agregar cubo</button>
+      <button id="moveUpBtn" class="tool-btn">Subir</button>
+      <button id="moveDownBtn" class="tool-btn">Bajar</button>
+      <button id="colorBtn" class="tool-btn">Color</button>
+      <input id="colorPicker" type="color" value="#38bdf8">
+    </section>
+
+    <footer class="status" id="statusText">Escena lista</footer>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
