@@ -1,0 +1,11 @@
+{
+  "name": "Forge Studio",
+  "short_name": "Forge Studio",
+  "description": "Editor 3D web para modelado por bloques desde movil y navegador.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#111827",
+  "orientation": "portrait",
+  "icons": []
+}
