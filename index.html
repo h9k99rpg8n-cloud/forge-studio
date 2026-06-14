@@ -5,34 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#111827">
   <meta name="description" content="Forge Studio es un editor 3D web para crear modelos por bloques desde movil y navegador.">
-  <title>Forge Studio Alfa 0.1</title>
+  <title>Forge Studio Alfa 0.2</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="app">
-    <header class="topbar">
-      <div>
-        <h1>Forge Studio</h1>
-        <p>Alfa 0.1 - Modelado 3D movil</p>
-      </div>
-      <button id="deleteBtn" class="danger-btn">Borrar</button>
-    </header>
-
     <section class="viewport-card">
       <canvas id="viewport"></canvas>
-      <div class="hint">Arrastra para rotar • Pellizca para zoom • Toca un cubo para seleccionar</div>
-    </section>
 
-    <section class="panel">
-      <button id="addCubeBtn" class="tool-btn">Agregar cubo</button>
-      <button id="moveUpBtn" class="tool-btn">Subir</button>
-      <button id="moveDownBtn" class="tool-btn">Bajar</button>
-      <button id="colorBtn" class="tool-btn">Color</button>
-      <input id="colorPicker" type="color" value="#38bdf8">
-    </section>
+      <header class="topbar glass">
+        <div>
+          <h1>Forge Studio</h1>
+          <p>Alfa 0.2 - Gizmos de transformacion</p>
+        </div>
+        <button id="deleteBtn" class="danger-btn">Borrar</button>
+      </header>
 
-    <footer class="status" id="statusText">Escena lista</footer>
+      <div class="left-panel glass">
+        <button id="addCubeBtn" class="tool-btn">Cubo</button>
+        <button id="duplicateBtn" class="tool-btn">Duplicar</button>
+        <button id="colorBtn" class="tool-btn">Color</button>
+        <input id="colorPicker" type="color" value="#38bdf8">
+      </div>
+
+      <div class="right-tools glass">
+        <button id="moveModeBtn" class="tool-btn active">Mover</button>
+        <button id="rotateModeBtn" class="tool-btn">Rotar</button>
+        <button id="scaleModeBtn" class="tool-btn">Escalar</button>
+      </div>
+
+      <div class="bottom-status glass" id="statusText">Escena lista</div>
+      <div class="hint">Arrastra para orbitar • Pellizca para zoom • Toca un cubo • Usa el gizmo</div>
+    </section>
   </main>
 
   <script type="module" src="js/app.js"></script>
